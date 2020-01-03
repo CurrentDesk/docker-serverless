@@ -8,6 +8,8 @@ RUN apk add python3
 RUN apk add py-pip
 RUN pip install --no-cache-dir awscli
 RUN apk add postgresql-client
+RUN apk add postgresql-dev
+RUN apk add libpq
 RUN apk add curl
 RUN curl -L https://github.com/hasura/graphql-engine/raw/master/cli/get.sh | ash
 
