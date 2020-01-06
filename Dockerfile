@@ -4,6 +4,7 @@ RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repo
 RUN apk add --force apk-tools@edge
 
 # install AWS CLI
+RUN apk add alpine-sdk
 RUN apk add python3
 RUN apk add py-pip
 RUN pip install --no-cache-dir awscli
