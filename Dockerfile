@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:12-alpine
 RUN apk update
 RUN echo "@edge http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories
 RUN apk add --force apk-tools@edge
